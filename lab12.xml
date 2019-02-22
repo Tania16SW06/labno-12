@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemadesigner version="6.5">
+<source>
+<database charset="latin1" collation="latin1_swedish_ci">user</database>
+</source>
+<canvas zoom="100">
+<tables>
+<table name="load" view="colnames">
+<left>0</left>
+<top>0</top>
+<width>102</width>
+<height>146</height>
+<sql_create_table>CREATE TABLE `load` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `type` text NOT NULL,
+  `command` text NOT NULL,
+  `value` text NOT NULL,
+  UNIQUE KEY `id` (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1</sql_create_table>
+</table>
+<table name="usertable" view="colnames">
+<left>107</left>
+<top>0</top>
+<width>110</width>
+<height>146</height>
+<sql_create_table>CREATE TABLE `usertable` (
+  `user_id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_name` varchar(255) NOT NULL,
+  `user_type` varchar(255) NOT NULL,
+  `contact` varchar(255) NOT NULL,
+  PRIMARY KEY (`user_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1</sql_create_table>
+</table>
+</tables>
+</canvas>
+</schemadesigner>
